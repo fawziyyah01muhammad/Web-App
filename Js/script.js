@@ -4,5 +4,5 @@ function showMenu(){
     checkMenu.style.left = "0"
 }
 function hideMenu(){
-    checkMenu.style.left = "-500px"
+    checkMenu.style.left = "-700px"
 }
