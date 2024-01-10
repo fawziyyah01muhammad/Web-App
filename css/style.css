@@ -3,27 +3,28 @@
     margin: 0;
 }
 body{
-    background-color: rgb(45, 45, 45);
+    background-color:white;
 }
 nav{
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: rgb(45, 45, 45);
+    background-color: white;
     position: sticky;
     top: 0%;
     z-index: 6;
+    box-shadow: 0 0 20px lightgray;
 }
 nav img{
     width: 50px;
     height: 50px;
     border-radius: 50%;
     border: 2px solid red;
-    box-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px lightgray;
 }
 nav i{
-    color: white;
-    border: 2px solid white;
+    color: black;
+    border: 2px solid black;
     padding: 10px 15px;
     font-size: 25px;
     border-radius: 5px;
@@ -140,19 +141,19 @@ height: 100vh;
     align-items: center;
     justify-content: space-between;
     position: sticky;
-    background-color: rgb(45, 45, 45);
+    background-color: white;
     z-index: 4;
     width: 100%;
     bottom: 0;
     left: 0;
     padding:15px 100px;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px lightgray;
 }
 .bottom-icons a{
     text-decoration: none;
-    color: white;
+    color: black;
     text-align: center;
-    text-shadow:0 0 13px #fff;
+    text-shadow:0 0 13px black;
 }
 .bottom-icons a i{
     text-shadow: none;
@@ -164,7 +165,7 @@ height: 100vh;
     padding: 20px 120px;
 }
 .section1 p{
-    color: white;
+    color: black;
     text-align: center;
 }
 .section1 img{
@@ -193,8 +194,8 @@ height: 100vh;
 .section2-row{
     border-radius: 15px;
     padding: 20px;
-    box-shadow: 0 0 20px black;
-    color: #fff;
+    box-shadow: 0 0 20px lightgray;
+    color: black;
     margin-bottom: 20px;
 }
 .tomato{
@@ -228,7 +229,7 @@ height: 100vh;
     .section1 img{
         width: 85px;
         height: 85px;
-        box-shadow: 0 0 20px black;
+        box-shadow: 0 0 20px lightgray;
         margin: 10px;
     }
     .section2{
@@ -267,10 +268,10 @@ height: 100vh;
         padding: 20px;
       }
       .nav-list hr{
-        margin: 50px 0 10px 0;
+        margin: 20px 0 10px 0;
       }
       .nav-list ul li a{
-        font-size: 25px;
+        font-size: 20px;
         padding: 10px;
       }
 }
@@ -287,7 +288,6 @@ height: 100vh;
         font-size: 20px;
     }
     .section1 p{
-        color: white;
         text-align: center;
         font-size: 13px;
     }
@@ -303,9 +303,11 @@ height: 100vh;
     padding: 5px 0;
 }
 .setting ul li a{
-    color: white;
+    color: black;
     text-decoration: none;
     display: flex;
+    font-size: 19px;
+    font-weight: 700;
 }
 .setting ul li a i{
     background-color: blue;
@@ -320,7 +322,7 @@ height: 100vh;
     margin:0 10px 0 0;
     font-size: 14px;
     padding: 0;
-    box-shadow: 0 0 10px rgb(3, 3, 193);
+    box-shadow: 0 0 10px lightgray;
 }
 .setting ul li a i.orange{
     background-color: orange;
@@ -339,10 +341,57 @@ height: 100vh;
     background-color: tomato;
 }
 
+.switch{
+    margin: 0 10px;
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 20px;
+}
+.slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 30px;
+}
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #fff;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+input:checked + .slider{
+    background-color: blue;
+}
+input:checked + .slider:before{
+   transform: translateX(15px);
+}
+.switch input{
+    display: none;
+}
+@media(max-width:700px){
+    .setting ul li a{
+        font-size: 11px;
+    }
+    .setting h3{
+        font-size: 19px;
+        padding: 5px 0;
+    }
+}
+
 .verification{
     text-align: center;
-    color: white;
-    box-shadow: 0 0 10px black;
+    color: black;
+    box-shadow: 0 0 10px lightgray;
     width: 40%;
     margin:50px auto;
     border-radius: 10px;
@@ -352,6 +401,8 @@ height: 100vh;
     width: 100px;
     height: 100px;
     margin: 30px 0 50px 0;
+    background-color: #fff;
+    border-radius: 50%;
 }
 .verification p{
     text-align: left;
@@ -367,22 +418,21 @@ height: 100vh;
 .verification h1{
     font-size: 50px;
 }
-.verification button{
-    margin: 80px 0 50px 0;
+.blue-btn{
+    margin:100px auto 20px auto;
+    width: 200px;
+    height: 50px;
+}
+.blue-btn button{
     border: none;
     background-color: rgb(0, 166, 255);
-    padding: 10px 50px;
-}
-.verification div i{
-    color: rgb(0, 166, 255);
-    padding-right: 5px;
-}
-.verification h3{
-    padding: 10px 0;
+    width: 200px;
+    height: 50px;
 }
 nav h2{
     color: #fff;
 }
+
 @media(max-width:1000px){
     .verification{
         width: 85%;
@@ -414,7 +464,7 @@ nav h2{
 .login{
     text-align: center;
     color: white;
-    box-shadow: 0 0 10px black;
+    /* box-shadow: 0 0 10px black; */
     width: 40%;
     margin:50px auto;
     border-radius: 10px;
@@ -427,7 +477,7 @@ nav h2{
     width: 100%;
     background-color: transparent;
     border: none;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid rgb(45, 45, 45);
     border-radius: 2px;
     margin: 10px 0;
     color: #fff;

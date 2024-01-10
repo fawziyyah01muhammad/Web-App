@@ -9,6 +9,10 @@
     <title>Web App</title>
 </head>
 <body>
+    <nav>
+            <img src="./img/IMG_2060.PNG" alt="logo">
+            <i onclick="showMenu()" class="fa fa-bars"></i>
+    </nav>
     <div class="nav-list" id="menu">
       <i onclick="hideMenu()" class="fa fa-times"></i>
       <div class="nav-list-top">
@@ -34,19 +38,14 @@
       <p>@2024 All rights reserved by Designing world</p>
     </div>
 
-      <div class="login">
-        <form>
-          <img src="./img/logo.png" alt="logo">
-          <h3>Login to Ticket Validator</h3>
-          <input type="email" name="email" placeholder="Enter Email Address" required>
-          <i class="fa-regular fa-eye" id="togglePassword" style="float:right; margin: 15px 10px -45px 0;"></i>
-          <input type="password" name="password" placeholder="Enter Password" required>
-          <p><a href="#">Forgot Password?</a></p>
-          <div>
-       <button><a href="./index.html">Login</a></button>
-      </div>
-      </form>
-        </div>
+      
+
+<div class="bottom-icons">
+<a href="index.html"><i class="fa-solid fa-home"></i><br>Home</a>
+<a href="scan.html"><i class="fa-solid fa-qrcode"></i><br>Scan</a>
+<a href="verification.html"><i class="fa-regular fa-comment-dots"></i><br>Chat</a>
+<a href="settings.html"><i class="fa-solid fa-gear"></i><br>Settings</a>
+</div>
 
     <script src="./Js/script.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
