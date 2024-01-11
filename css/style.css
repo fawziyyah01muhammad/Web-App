@@ -46,6 +46,7 @@ height: 100vh;
 .carousel-indicators .active {
     background-color:white !important;
   }
+
   .carousel-indicators [data-bs-target] {
 	/* box-sizing: content-box;
     flex: 0 1 auto; */
@@ -143,12 +144,14 @@ height: 100vh;
     padding:5px 20px;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
     background-color: white;
     z-index: 4;
     width: 100%;
     bottom: 0;
     left: 0;
+    top: 0;
+    right: 0;
     padding:15px 100px;
     box-shadow: 0 0 10px lightgray;
 }
@@ -222,7 +225,11 @@ height: 100vh;
 .section2-row span{
     color: rgb(215, 200, 252);
 }
+.carousel-indicators {
+    margin-bottom: 0 !important;
+}
 @media(max-width:1000px){
+
     .carousel-item img {
         height: 100%;
     }
@@ -274,7 +281,7 @@ height: 100vh;
         margin: 5px 0 10px 0;
       }
       .nav-list ul li a{
-        font-size: 20px;
+        font-size: 17px;
         padding: 10px;
       }
 }
@@ -294,6 +301,7 @@ height: 100vh;
         text-align: center;
         font-size: 13px;
     }
+
 }
 .img-con a{
     text-decoration: none;
@@ -359,6 +367,7 @@ height: 100vh;
     display: inline-block;
     width: 35px;
     height: 20px;
+    cursor: pointer;
 }
 .slider{
     position: absolute;
@@ -397,6 +406,10 @@ input:checked + .slider:before{
     .setting h3{
         font-size: 19px;
         padding: 5px 0;
+    }
+    .setting-container{
+            width: 100%;
+            height: 100vh;
     }
 }
 
@@ -537,15 +550,16 @@ nav h2{
 
 .scan{
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     padding: 20px;
+    gap: 50px;
 }
 .scan-row{
     background-color: whitesmoke;
     border-radius: 10px;
-    width: 190px;
-    height: 150px;
-    padding: 10px 20px;
+    width: 250px;
+    height: 170px;
+    padding: 30px 20px;
 }
 .scan-row p{
     font-size: 13px;
@@ -560,6 +574,39 @@ nav h2{
     gap: 5px;
 }
 .scan-top img{
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+@media(max-width:700px){
+    .scan-container{
+        width: 100%;
+        height: 100vh;
+    }
+    .scan{
+        gap: 20px;
+    }
+    .scan-row{
+        background-color: whitesmoke;
+        border-radius: 10px;
+        width: 190px;
+        height: 150px;
+        padding: 10px 15px;
+    }
+    .scan-row p{
+        font-size: 13px;
+        margin: 3px 0;
+    }
+    .scan-row h4{
+        font-size: 15px;
+        font-weight: 900;
+    }
+    .scan-top{
+        display: flex;
+        gap: 5px;
+    }
+    .scan-top img{
+        width: 20px;
+        height: 20px;
+    }
 }
