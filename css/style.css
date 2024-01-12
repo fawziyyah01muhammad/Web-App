@@ -36,10 +36,29 @@ nav i{
     border: none;
     border-radius: 8px;
     color: white;
+    cursor: pointer;
 }
+/* .caption{
+    z-index: 2;
+} */
+.caption a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+.caption a .button:hover{
+    background-color:rgb(45, 45, 45);
+    transition:all ease-in-out .1s;
+    color: white;
+}
+.button:hover{
+    background-color: rgb(45, 45, 45);
+    transition:all ease-in-out .1s;
+}
+
 .carousel-item img{
 width: 100%;
-height: 100vh;
+height: 80vh;
 }
 
 /* Bootstrap custome carousel */
@@ -48,16 +67,15 @@ height: 100vh;
   }
 
   .carousel-indicators [data-bs-target] {
-	/* box-sizing: content-box;
-    flex: 0 1 auto; */
     width: 10px !important; /* change width */
     height: 10px !important; /* change height */
     padding: 0;
     border-radius: 50%;
-    margin-top: 50% !important;
+    /* margin-top: 50% !important; */
   }
   .caption h1{
     font-size: 50px;
+    transition:all ease-in-out .1s;
   }
   .carousel-item .caption{
     position: absolute;
@@ -67,11 +85,12 @@ height: 100vh;
     bottom: 0;
     color: #fff;
     text-align: center;
+    transition:all ease-in-out .1s;
   }
   .navy-blue{
     background-color: rgb(2, 1, 51);
     width: 100%;
-height: 100vh;
+height: 80vh;
   }
 .nav-list{
     position:fixed;
@@ -226,6 +245,7 @@ height: 100vh;
     padding: 0;
     margin: 0;
     font-size: 12px;
+    color: white;
 }
 .section2-row span{
     color: rgb(215, 200, 252);
@@ -277,20 +297,20 @@ height: 100vh;
         padding: 15px 20px;
       }
       .nav-list-top{
-        padding: 30px 0;
+        padding: 20px 0;
       }
       .nav-list ul{
-        padding: 10px;
+        padding: 5px;
       }
       .nav-list hr{
         margin: 5px 0 10px 0;
       }
       .nav-list ul li a{
         font-size: 17px;
-        padding: 10px;
+        padding: 15px 15px;
       }
       .navy-blue{
-        height: 26vh;
+        height: 23.5vh;
       }
 }
 @media screen and (min-width:270px) and (max-width:700px){
@@ -460,12 +480,21 @@ input:checked + .slider:before{
     width: 200px;
     height: 50px;
 }
-.blue-btn button{
+.blue-btn .btn{
     border: none;
     background-color: rgb(0, 166, 255);
     width: 200px;
-    height: 50px;
+    height: 40px;
+    color: #fff;
 }
+.blue-btn .btn a{
+    color: #fff;
+}
+.verification .btn:hover{
+    background-color: transparent;
+    border: 2px solid rgb(0, 166, 255);
+    color: black;
+    }
 nav h2{
     color: #fff;
 }
@@ -483,7 +512,7 @@ nav h2{
     .verification h1{
         font-size: 50px;
     }
-    .verification button{
+    .verification .btn{
         margin: 80px 0 50px 0;
         border: none;
         background-color: rgb(0, 166, 255);
@@ -530,14 +559,21 @@ nav h2{
 .login h3{
     font-size: 20px;
 }
-.login button{
+.login a div{
     margin: 80px 0 0px 0;
     border: none;
     background-color: rgb(0, 166, 255);
     padding: 10px 50px;
+    color: #fff;
 }
-.login form button a{
+.login a div:hover{
+background-color: transparent;
+border: 2px solid rgb(0, 166, 255);
+}
+.login form div a{
     text-decoration: none;
+}
+.login form a div:hover{
     color: black;
 }
 .login form p a{
@@ -618,3 +654,5 @@ nav h2{
         height: 20px;
     }
 }
+
+
