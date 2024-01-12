@@ -71,6 +71,7 @@ height: 80vh;
     height: 10px !important; /* change height */
     padding: 0;
     border-radius: 50%;
+    outline: none;
     /* margin-top: 50% !important; */
   }
   .caption h1{
